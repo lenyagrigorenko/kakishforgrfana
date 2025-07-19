@@ -1,0 +1,202 @@
+{
+  "nodes": [
+    {
+      "id": "App",
+      "title": "App"
+    },
+    {
+      "id": "BE-Balancer",
+      "title": "BE-Balancer"
+    },
+    {
+      "id": "DB-Balancer",
+      "title": "DB-Balancer"
+    },
+    {
+      "id": "FE-Balancer",
+      "title": "FE-Balancer"
+    },
+    {
+      "id": "BE-1",
+      "title": "BE-1"
+    },
+    {
+      "id": "BE-2",
+      "title": "BE-2"
+    },
+    {
+      "id": "DBMI-1",
+      "title": "DBMI-1"
+    },
+    {
+      "id": "DBRI-2",
+      "title": "DBRI-2"
+    },
+    {
+      "id": "DBRI-3",
+      "title": "DBRI-3"
+    },
+    {
+      "id": "FE-1",
+      "title": "FE-1"
+    },
+    {
+      "id": "FE-2",
+      "title": "FE-2"
+    },
+    {
+      "id": "DBM-11",
+      "title": "DBM-11"
+    },
+    {
+      "id": "DBM-12",
+      "title": "DBM-12"
+    },
+    {
+      "id": "DBR-21",
+      "title": "DBR-21"
+    },
+    {
+      "id": "DBR-22",
+      "title": "DBR-22"
+    },
+    {
+      "id": "DBR-31",
+      "title": "DBR-31"
+    },
+    {
+      "id": "DBR-32",
+      "title": "DBR-32"
+    },
+    {
+      "id": "SRV-BE-1",
+      "title": "SRV-BE-1"
+    },
+    {
+      "id": "SRV-BE-2",
+      "title": "SRV-BE-2"
+    },
+    {
+      "id": "SRV-DBMI-1",
+      "title": "SRV-DBMI-1"
+    },
+    {
+      "id": "SRV-DBRI-2",
+      "title": "SRV_DBRI-2"
+    },
+    {
+      "id": "SRV-DBRI-3",
+      "title": "SRV-DBRI-3"
+    },
+    {
+      "id": "SRV-FE-1",
+      "title": "SRV-FE-1"
+    },
+    {
+      "id": "SRV-FE-2",
+      "title": "SRV-FE-2"
+    }
+  ],
+  "edges": [
+    {
+      "source": "App",
+      "target": "BE-Balancer"
+    },
+    {
+      "source": "App",
+      "target": "DB-Balancer"
+    },
+    {
+      "source": "App",
+      "target": "FE-Balancer"
+    },
+    {
+      "source": "BE-Balancer",
+      "target": "BE-1"
+    },
+    {
+      "source": "BE-Balancer",
+      "target": "BE-2"
+    },
+    {
+      "source": "DB-Balancer",
+      "target": "DBMI-1"
+    },
+    {
+      "source": "DB-Balancer",
+      "target": "DBRI-2"
+    },
+    {
+      "source": "FE-Balancer",
+      "target": "FE-1"
+    },
+    {
+      "source": "FE-Balancer",
+      "target": "FE-2"
+    },
+    {
+      "source": "BE-1",
+      "target": "SRV-BE-1"
+    },
+    {
+      "source": "BE-2",
+      "target": "SRV-BE-2"
+    },
+    {
+      "source": "DBMI-1",
+      "target": "DBM-11"
+    },
+    {
+      "source": "DBMI-1",
+      "target": "DBM-12"
+    },
+    {
+      "source": "DBM-11",
+      "target": "SRV-DBMI-1"
+    },
+    {
+      "source": "DBM-12",
+      "target": "SRV-DBMI-1"
+    },
+    {
+      "source": "DBRI-2",
+      "target": "DBR-21"
+    },
+    {
+      "source": "DBRI-2",
+      "target": "DBR-22"
+    },
+    {
+      "source": "DBRI-3",
+      "target": "DBR-31"
+    },
+    {
+      "source": "DBRI-3",
+      "target": "DBR-32"
+    },
+    {
+      "source": "FE-1",
+      "target": "SRV-FE-1"
+    },
+    {
+      "source": "FE-2",
+      "target": "SRV-FE-2"
+    },
+    {
+      "source": "DBR-21",
+      "target": "SRV-DBRI-2"
+    },
+    {
+      "source": "DBR-22",
+      "target": "SRV-DBRI-2"
+    },
+    {
+      "source": "DBR-31",
+      "target": "SRV-DBRI-3"
+    },
+    {
+      "source": "DBR-32",
+      "target": "SRV-DBRI-3"
+    }
+  ]
+}
